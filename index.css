@@ -1,0 +1,79 @@
+body{
+	width: 800px;
+	margin: 0 auto;
+	background-color: #E0FFE1;
+}
+body > div {
+	height: 400px;
+}
+img.active{
+	z-index: 999;
+}
+img.inactive{
+	z-index: 0;
+}
+
+#dynamicslider{
+	background-color: black;
+	width: 100%;
+}
+#dynamicslider > div{
+	
+}
+#dynamicSlider > #slider_display {
+	height: 83%;
+	margin-bottom: 2%;
+	position: relative;
+	overflow: hidden;
+}
+#dynamicslider > #slider_display > img{
+	max-width: 95%;
+	height: 95%;
+	position: absolute;
+	margin: 0 auto;
+	right: 0;
+	left: 0;
+	border: 7px solid rgba(242, 242, 242, 0.6);
+}
+
+#dynamicSlider > #slider_thumbnails{
+	background: black;
+	overflow: hidden;
+	position: relative;
+	white-space: nowrap;
+	/*height: 15%;*/
+}
+
+#dynamicslider > #slider_thumbnails > .slider_buttons{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.6;
+    height: 70%;
+    position: absolute;
+    top: 20%;
+    width: 50px;
+    z-index: 1;
+}
+#dynamicslider #slider_button_left{
+	background-image: url('icons/arrow-left.png');
+	left: 0;
+}
+#dynamicslider #slider_button_right{
+	background-image: url('icons/arrow-right.png');
+	right: 0;
+}
+
+#dynamicslider > #slider_thumbnails > div{
+	position: relative;
+	display: inline;
+}
+
+#dynamicSlider > #slider_thumbnails img{
+	display: inline-block;
+	height: 15%;
+	margin:10px;
+}
